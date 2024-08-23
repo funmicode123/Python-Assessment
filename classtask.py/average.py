@@ -1,9 +1,9 @@
 """
-prompt the user to enter a variable
+prompt the user to enter the first variable
 store as integer1
-prompt the user to enter a variable
+prompt the user to enter the second variable
 store as integer2
-prompt the user to enter a variable
+prompt the user to enter the third variable
 store as integer3
 calculate the sum of the three integers
 store as the total
