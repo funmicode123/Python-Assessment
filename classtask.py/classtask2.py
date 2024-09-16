@@ -26,33 +26,33 @@ if deposit == -1:
 
 """
 
-menu = print('''
+menu = '''
 -> 1. Deposit
 -> 2. Withdraw
 -> 3. Balance
 -> 0. Back
-''')
+'''
+
 balance = 0
 
 option = input ('Select an option: ')
 
-while option != 0:
+while option != '0':
 	if option == '1':
 		deposit = float(input("Enter deposit amount: "))
 		balance += deposit
+		print("Your new balance is ", balance)
 		option = input (menu)
 	elif option == '2':
 		withdraw  = float(input("Enter withdraw amount: "))
 		if withdraw <= balance:
 			balance -= withdraw
-			option = input (menu)
-			
+			print("Your new balance is ", balance)
 		else:
 			print("Insufficient balance")
-			option = input (menu)
+		option = input(menu)
 	elif option == '3':
-		print("Your balance is ", balance)
-		option = input (menu)
-		break
+		print("Your current balance is ", balance)
+		option = input(menu)
 
 print("Thanks for banking with us")
