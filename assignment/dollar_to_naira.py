@@ -15,6 +15,13 @@ def get_naira(dollar):
     naira = dollar * 1550
     return naira
 
-dollar = float(input("Enter the dollar amount: "))
-naira = get_naira(dollar)
-print(f"The equivalent in Naira is: {naira:.2f}")
+try:
+	dollar = float(input("Enter the dollar amount: "))
+	naira = get_naira(dollar)
+	print(f"The equivalent in Naira is: {naira:.2f}")
+except TypeError:
+	print("Dollar value must be a number")
+except ValueError:
+	print("Invalid dollar value")
+except Exception:
+	print("Ah! i no understand you again ooooh...")

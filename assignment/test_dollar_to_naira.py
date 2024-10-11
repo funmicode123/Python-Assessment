@@ -16,5 +16,4 @@ class TestDollarToNaira(unittest.TestCase):
 		self.assertRaises(ValueError, dollar_to_naira.get_naira, -3)
 	
 	def test_that_dollar_to_naira_function_raises_error_with_string_value(self):
-		with self.assertRaises(TypeError):
-			dollar_to_naira.get_naira("byte")
+		self.assertRaises(TypeError, dollar_to_naira.get_naira, "byte")
