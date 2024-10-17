@@ -5,7 +5,7 @@ import cube
 
 class TestCube(unittest.TestCase):
 
-	def test_that_cube_funtion_exit(self):
+	def test_that_cube_funtion_exist(self):
 		cube.get_cube(3)
 	
 		
