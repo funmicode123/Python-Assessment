@@ -3,9 +3,6 @@ import array_tasks
 
 class TestArrayTasks(unittest.TestCase):
 
-    def test_that_array_tasks_function_exists(self):
-        self.assertTrue(hasattr(array_tasks, 'largest_number'))
-
     def test_that_array_tasks_function_return_largest(self):
         values = [10, 20, 30, 40, 50]
         largest_element = 50

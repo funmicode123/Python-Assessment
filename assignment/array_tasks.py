@@ -11,13 +11,13 @@ def is_element_present(values, element):
     return element in values  
 
 def print_odd_position_elements(values):
-    for i in range(1, len(values), 2):
-        print(values[i], end=' ')
+    for index in range(1, len(values), 2):
+        print(values[index], end=' ')
     print()
 
 def print_even_position_elements(values):
-    for i in range(0, len(values), 2):
-        print(values[i], end=' ')
+    for index in range(0, len(values), 2):
+        print(values[index], end=' ')
     print()
 
 def compute_total(values):
